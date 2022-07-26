@@ -1,0 +1,12 @@
+https://docs.google.com/document/d/1Rudz0_lc32p0nkF2mXAuEHRbd2ZY8qWgW_9s_TPqZKA/edit
+
+gcc -c fileName.c -o fileName.o
+ar -rcs (lib)fileNamelib(.a) fileName.o - how to compile -> gcc main.c -o  program -L. -lfileNamelib
+(static library above)
+
+gcc -fPIC -c day8def.c -o obj
+gcc -shared -o libday8def.so obj
+gcc -o prog day8.c -L. -lday8def
+export LD_LIBRARY_PATH=$(pwd) (to recognise)
+./prog
+(dynamic library above)
