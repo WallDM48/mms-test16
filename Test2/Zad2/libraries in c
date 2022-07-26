@@ -1,0 +1,10 @@
+ar rcs libmylib.a  comparators.o - that creates static library 
+gcc comparators. c -c -fPIC 
+gcc *.o -shared -o libcomparators.so
+
+Razlikata mejdu statichnite i dinamichnite biblioteki e v tova che ednite se zarejdat ot linkera 
+a drugite ot loadera 
+pri kompiliraneto na edin c file toi preminava prez nqkolko procesa
+pyrwo koda se razglejda ot predprocesora.Tam se zamestwat izrazite s # i se zapazva faila s razshurenie .i
+sled tova se prevryshta v assembly kod s razshirenie .o 
+posle se zadeistvat linkera i loadera i weche togava se generira mashinniq kod. 

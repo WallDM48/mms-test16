@@ -1,0 +1,5 @@
+4.1 find /home *.h
+4.2 find ~ -name main() | wc -l
+4.3.1 egrep '(0|+359)8[0-9]{7\}' phones.info
+4.3.2 egrep '!(0|+359)' phones.info
+4.3.2 egrep '(0|+359)87[0-9]{6\}' phones.info > phones.vivacom.data
