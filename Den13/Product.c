@@ -5,8 +5,6 @@
 #include<math.h>
 
 
-#define MAX 30 
-
 typedef struct Product{
     unsigned int id; // unique
     float price;  // random
@@ -15,8 +13,11 @@ typedef struct Product{
 
 
 }Product;
+
+
 int id_counter =0;
 char *names_list[] ={"Kola","Fanta","Sprite","7up","Mlyako"};
+
 
 void init_random_product(Product* p1){
     p1->id = id_counter++;
